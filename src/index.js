@@ -1,9 +1,10 @@
 const express = require("express");
+const app = express();
 const cors = require("cors");
 app.use(cors());
 const userController = require("./controller/user.controller");
 const productController = require("./controller/product_controller");
-const app = express();
+
 
 app.get("", (req, res) => {
   try {
