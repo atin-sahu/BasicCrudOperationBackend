@@ -1,16 +1,6 @@
-
-
-// webpack.config.js
-const Dotenv = require('dotenv-webpack');
+const dotenv = require('dotenv');
 require("dotenv").config();
 
-// module.exports = {
-//   ...
-//   plugins: [
-//     new Dotenv()
-//   ]
-//   ...
-// };
 
 const connectDB = require("./config/db");
 const app = require("./index");
