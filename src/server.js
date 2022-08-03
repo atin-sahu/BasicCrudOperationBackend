@@ -2,6 +2,7 @@
 
 // webpack.config.js
 const Dotenv = require('dotenv-webpack');
+require("dotenv").config();
 
 // module.exports = {
 //   ...
@@ -14,7 +15,7 @@ const Dotenv = require('dotenv-webpack');
 const connectDB = require("./config/db");
 const app = require("./index");
 
-app.listen(5000 || process.env.port, async () => {
+app.listen(5000 || process.env.PORT, async () => {
     try {
       await connectDB();
       console.log("listening port 5000");
